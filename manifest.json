@@ -1,0 +1,24 @@
+{
+  "name": "Tabnapping Prevention",
+  "action": {
+    "default_icon":"green_icon.png"
+  },
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "Tapnapping Prevention",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "scripting"
+  ],
+   "content_scripts": [
+   {
+     "matches": ["<all_urls>"],
+     "js": ["content.js", "resemble.js", "jquery.js"]
+   }
+ ],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

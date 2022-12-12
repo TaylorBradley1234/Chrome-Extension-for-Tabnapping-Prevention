@@ -3,7 +3,6 @@
 This code creates a Chrome Extension capable of detecting tabnapping attacks by comparing the original image displayed on the tab when a user navigates away from the page, to that of the webpage when the tab comes back into focus, and highlighting the differences.
 
 # Instructions:
-----------------------------------------------------------------
 
 Loading the extension:
 
